@@ -1,0 +1,30 @@
+scope=lifetime
+
+strict definition: a block or a region where a variable is defined and used and when a block or a region ends, variable is automatically destroyed
+
+basic principles of scoping
+
+{
+    ...
+    {
+    ...             // contents of outer block upto this point are vivible to the iternal block & contents of inner block is not vivible to outer block
+    }
+}
+.....................................
+{
+
+}
+                  //contents of this block is not visible to any block outside this block
+{
+
+}
+
+note. 
+1. when we write extern some_datatype some_variable_name; no memory is allocated only property is announced 
+
+2. multiple declarationd  of extern variable  is allowed eithin the file .This is not the case with automatic variables.
+
+3. extern variables says to compiler "go outside from my scope and you will find the definition of the variables 
+
+4. compiler belives that weather the extern variable said is true and poduce no error. Linker throws an error when he finds n such variable exists 
+5. when an extern variable is initialized , then memory forthis vaiable is allocated and it will be o=cinsidered defined

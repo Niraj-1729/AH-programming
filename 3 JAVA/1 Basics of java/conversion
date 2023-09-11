@@ -1,0 +1,12 @@
+public class conversion
+{
+    public static void main(String[]args) {
+        double paisa;
+        scanner in = new Scanner(System.in);
+        System.out.print("Enter the amount in ruppes to be converted paisa:");
+        int rs= in.nestInt();
+        paisa= rs*100;
+        System.out.println("amount in ruppes:"+ rs+"=amountin paisa:"+long)paisa);
+        in.close();
+    }
+}

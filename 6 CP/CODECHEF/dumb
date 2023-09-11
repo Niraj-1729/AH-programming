@@ -1,0 +1,11 @@
+{
+    "model": "gpt-3.5-turbo",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Hello!"
+        }
+    ]
+}
+
+https://api.openai.com/v1/chat/completions
