@@ -1,0 +1,1 @@
+// wap to count  numbers those are repeated and their frequency; 
