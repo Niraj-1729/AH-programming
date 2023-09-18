@@ -39,17 +39,7 @@ int main()
             }
         }
 
-        // else if (isupper(c))
-
-        // {
-        //     s[i] = tolower(c);
-
-        //     if (std::tolower(c) != 'a' && std::tolower(c) != 'e' && std::tolower(c) != 'i' && std::tolower(c) != 'o' && std::tolower(c) != 'u')
-        //     {
-        //         // If the character is a consonant, add a '.' before it
-        //         s += '.';
-        //     }
-        // }
+        
     }
 
     cout << s;
