@@ -3,6 +3,7 @@
     "files.associations": {
         "xutility": "cpp",
         "initializer_list": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }
