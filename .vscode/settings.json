@@ -1,6 +1,8 @@
 {
     "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "initializer_list": "cpp",
+        "ostream": "cpp"
     }
 }
