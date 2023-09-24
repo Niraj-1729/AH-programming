@@ -13,11 +13,14 @@ struct Node
     }
 };
 
-void insertAthead(Node *&head, int val)
-{
-    Node *new_node = new Node(val);
-    new_node->next = head;
-    head = new_node;
+// void insertAthead(Node *&head, int val)
+// {
+//     Node *new_node = new Node(val);
+//     new_node->next = head;
+//     head = new_node;
+// }
+void insertAtEnd(){
+
 }
 
 void display(Node *head)
