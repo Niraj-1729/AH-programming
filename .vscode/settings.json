@@ -1,11 +1,12 @@
 {
-    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
         "xutility": "cpp",
         "initializer_list": "cpp",
         "ostream": "cpp",
         "iostream": "cpp",
         "vector": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "cmath": "cpp"
     }
 }
