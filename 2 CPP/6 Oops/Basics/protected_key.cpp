@@ -1,40 +1,34 @@
-// C++ program to demonstrate private
-// access modifier
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Circle
+class base
 {
-	// private data member
-	private:
-		double radius;
-	
-	// public member function
-	public:
-		void compute_area(double r)
-		{ // member function can access private
-			// data member radius
-			radius = r;
-			
-			double area = 3.14*radius*radius;
-			
-			cout << "Radius is: " << radius << endl;
-			cout << "Area is: " << area;
-		}
-	
+protected:
+	int a, b;
+
+public:
+	void show()
+	{
+		a = 10;
+		b = 20;
+		cout << a << " " << b << endl;
+	}
 };
 
-// main function
-int main()
+class Derive : public base
 {
-	// creating object of the class
-	Circle obj;
-	
-	// trying to access private data member
-	// directly outside the class
-	obj.compute_area(1.5);
-	
-	
-	return 0;
+public:
+	void disp()
+	{
+		a = 30;
+		b = 40;
+		cout<<a<<" "<<b<<endl;
+	}
+};
+
+int main () {
+	//  always make object of derived class 
+	Derive obj;
+	obj.disp();
+	obj.show();
 }

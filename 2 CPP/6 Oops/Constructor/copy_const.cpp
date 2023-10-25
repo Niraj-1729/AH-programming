@@ -24,9 +24,11 @@ public:
 };
 
 int main()
-{
-//   copy(10,20);
-//   copy obj2=obj;
+{ 
+    copy obj(10,20);
+    copy obj1=obj;
+    obj.show();
+
 
 
 }

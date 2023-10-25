@@ -1,35 +1,37 @@
-// C++ program to demonstrate private
-// access modifier
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Circle
+class A
 {
-	// private data member
-	private:
-		double radius;
-	
-	// public member function
-	public:
-		double compute_area()
-		{ // member function can access private
-			// data member radius
-			return 3.14*radius*radius;
-		}
-	
+private:
+	int a, b;
+
+public:
+	void show()
+	{
+		a = 10;
+		b = 20;
+		cout << a << " " << b << endl;
+	}
+	friend class B;
 };
 
-// main function
+class B
+{
+public:
+	void disp(A ref)
+	{
+		ref.a = 30;
+		ref.b = 40;
+		cout << ref.a << " " << ref.b << endl;
+	}
+};
+
 int main()
 {
-	// creating object of the class
-	Circle obj;
-	
-	// trying to access private data member
-	// directly outside the class
-	obj.radius = 1.5;
-	
-	cout << "Area is:" << obj.compute_area();
+    A obj;
+	B obj2;
+	obj.show();
+	obj2.disp(obj);
 	return 0;
 }
