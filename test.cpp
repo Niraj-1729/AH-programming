@@ -1,13 +1,11 @@
-// #include <bits/stdc++.h>
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main() { 
-    int t;
-    cin>>t;
-    while(t--){
-        cout<<"hello world"<<endl
-        
-    }
+int main()
+{
+    int n=5;
+    int *ptr = &n;
+    cout<<n<<" "<<&n<<" "<<ptr<<" "<<*ptr;
+
     return 0;
 }
