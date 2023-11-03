@@ -23,3 +23,7 @@ redeclaration is allowed outside the block
 • Cannot be Hoisted.
 
 • Creates only read-only references to value.
+
+# var 
+function scoped 
+hoisting is allowed in var 
