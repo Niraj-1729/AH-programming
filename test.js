@@ -1,10 +1,24 @@
-//  multiple varable in single statement 
-var test1 = 4,
-  test2 = 10,
-  test3 = 15
-function foo() {
-  console.log(test1, test2, test3);
+let = 10;
+let section = 3;
+let title = 'javascript';
+
+const course = {
+  // declaration of object 
+  letcure: 3,
+  section: 3,
+  title: 'javascript',
+  notes: {
+    introduction: "Welcome to js course"
+  },
+  enroll(){
+    console.log('you are successfully enrolled');
+  }
 }
-foo();
 
+course.enroll()
+console.log(course)
 
+//object creation at runtime 
+//redeclaration is possible in object as object is referenced data type
+course.price=999
+console.log(course);

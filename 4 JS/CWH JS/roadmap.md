@@ -9,7 +9,7 @@
   Array
   String
   Numbers
-  Math
+  Math  .
 
 5 filter,map,js in browser
 6 DOM 
