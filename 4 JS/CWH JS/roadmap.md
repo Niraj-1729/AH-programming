@@ -1,7 +1,17 @@
-1-2 basics intro 
-3 strings 
-4 arrays,loop
-5 filter,map,js in browser --
+ # basics 
+ 
+  Variables & Datatypes
+  Operators
+  Loops
+  Perfomance & Debugging
+  Object
+  Function
+  Array
+  String
+  Numbers
+  Math
+
+5 filter,map,js in browser
 6 DOM 
 7 callbacks 
 8 promises 
