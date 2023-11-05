@@ -1,4 +1,4 @@
-let lecture= 10;
+let lecture = 10;
 let section = 3;
 let title = 'javascript'
 
@@ -22,4 +22,10 @@ function Course(title) {
 }
 
 const course = new Course('javascript');
+delete course.title;
+course.checkEnrollment = function () {
+    console.log('30 users are enrolled');
+}
 course.enroll()
+
+console.log(course)
