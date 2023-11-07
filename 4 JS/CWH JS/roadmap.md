@@ -1,9 +1,8 @@
-* functions
 * DOM manipulation 
 * Asynchronous js
 * 15 projects in js
  
-  control flow->exception handling
+  control flow->exception handling 
   classes 
 # Advanced Js 
   iterators & generators 
@@ -13,7 +12,7 @@
   working with APIs 
   Data structures 
   Json 
-
+# Front-end
 Build HTML-CSS-JS projects 
 Responsiveness 
 Bootstrap

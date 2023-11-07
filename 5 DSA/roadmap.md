@@ -20,7 +20,7 @@
     11. STACKS 
     12. QUEUES
 
-# How to study
+  How to study
   1. Striver and GFG:- lecture+concepts+questions
   2. Random yt:-  lecture+question+concepts
   3. GFG articles:- concepts+questions
@@ -35,7 +35,8 @@
     analysis
 
 # CODING (POTD) 
-  1. 
+  1. LC
+  2. GFG
 
 
 
