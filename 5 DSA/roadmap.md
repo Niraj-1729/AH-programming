@@ -20,6 +20,8 @@
     11. STACKS 
     12. QUEUES
 
+    13
+
   How to study
   1. Striver and GFG:- lecture+concepts+questions
   2. Random yt:-  lecture+question+concepts
