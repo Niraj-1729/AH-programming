@@ -1,21 +1,28 @@
-// DOM Manipulation 
+/* 
+ pillars of DOM
+
+1. Selection of an Element 
+2. Changing HTML
+3. Changing CSS 
+4. Event Listner 
+*/
 
 
-// GetElementById()
-const title = document.getElementById('main-heading');
-console.log(title);
-console.log("Hello");
-
-//GetElementByClassName()
-const listItem= document.getElementsByClassName('list-items')
-console.log(listItem);
+// 1. Selection of an Element
+var a = document .querySelector("h1");   // tag
+// document .querySelector("#id"); //id
+// document .querySelector(".class"); //class
+console.log(a);
 
 
-//getElementByTagname()
-const listItem= document.getElementsByTagName('li')
-console.log(listItem);
-
-//querySelector()
+// 2. changing an element
+// var a = document.querySelector("h1");
+a.innerHTML= "Badal barsa bijli "
 
 
-// querySelectorAll()
+// 3. changing CSS
+a.style.color= " black"
+a.style.backgroundColor= "pink"
+
+
+// 4. Event Listner 

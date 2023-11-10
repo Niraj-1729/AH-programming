@@ -6,21 +6,28 @@
     5. STL
 
     # Basics of DSA
-    1. MATH 
-    2. BIT manipulation 
-    3. RECURSION 
+    1. MATH ✔️
+    2. BIT manipulation ✔️
+    3. RECURSION ✔️
     4. BACKTRACKING 
     8. HASHING 
-    9. MATRIX
+    9. MATRIX 
 
-    5. ARRAY 
+    5. ARRAY ✔️
     6. SEARCHING AND SORTING 
     7. STRING 
     10. LINKED LIST 
     11. STACKS 
     12. QUEUES
 
-    13
+    13. sliding window & two pointer concept
+    14. greedy algorithm concepts 
+    15. Binary tree 
+    16. Binary search tree 
+    17. graphs
+    16. DP 
+    17. tries
+    18. Strings
 
   How to study
   1. Striver and GFG:- lecture+concepts+questions
