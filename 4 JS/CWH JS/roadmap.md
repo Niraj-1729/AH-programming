@@ -9,13 +9,15 @@
   Modules in JS 
   memory Managment
   using chrome dev tools 
-  working with APIs 
   Data structures 
+  ES6
   Json 
 # Front-end
 Build HTML-CSS-JS projects 
 Responsiveness 
-Bootstrap
+Bootstrap/ tailwind
+working with APIs 
+animations
 Git & github 
 sublime 
 
