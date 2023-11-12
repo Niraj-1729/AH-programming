@@ -45,9 +45,22 @@
     analysis
 
 # CODING (POTD) 
-  1. LC
-  2. GFG
-  3. practice of concepts by analysis 
+  1. LC (75 blind)
+  2. GFG (sheet of Babbar)
+  3. practice of concepts by analysis
+  4. at random  
+
+
+
+# Ultimetly
+1. DSA 
+2. Striver-sheet 
+3. Babbar sheet 
+4. CC & CF - 5* + achivement 
+5. GFG & LC - 500+ qs + rating and achivement
+6. String problem-solving  
+
+
 
 
 
