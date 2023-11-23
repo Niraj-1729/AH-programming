@@ -1,20 +1,22 @@
 # DSA :- 
-    # Fundamentals
-    1. Function ✔️
-    2. pointer ✔️
-    3. structure ✔️
-    4. DMA ✔️
-    5. STL ✔️
+    # Fundamentals 
+    1. Function 
+    2. pointer 
+    3. structure 
+    4. DMA 
+    5. STL 
 
-    # Basics of DSA
-    1. MATH ✔️
-    2. BIT manipulation ✔️
-    3. RECURSION ✔️
+    # Basics of DSA 
+    1. MATH 
+    2. BIT manipulation 
+    3. Array 
+    ✔️  
+    3. RECURSION 
     4. BACKTRACKING 
     8. HASHING 
     9. MATRIX 
 
-    5. ARRAY ✔️
+    5. ARRAY 
     6. SEARCHING AND SORTING 
     7. STRING 
     10. LINKED LIST 
@@ -58,7 +60,7 @@
 3. Babbar sheet 
 4. CC & CF - 5* + achivement 
 5. GFG & LC - 500+ qs + rating and achivement
-6. String problem-solving  
+6. start problem-solving  
 
 
 
