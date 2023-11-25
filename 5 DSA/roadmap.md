@@ -7,15 +7,16 @@
     5. STL 
 
     # Basics of DSA 
+    A
     1. MATH 
     2. BIT manipulation 
     3. Array 
-    ✔️  
+    B
     3. RECURSION 
     4. BACKTRACKING 
     8. HASHING 
     9. MATRIX 
-
+    C
     5. ARRAY 
     6. SEARCHING AND SORTING 
     7. STRING 
@@ -23,7 +24,7 @@
     11. STACKS 
     12. QUEUES
     13. sliding window & two pointer concept
-
+    D
     14. greedy algorithm concepts 
     15. Binary tree 
     16. Binary search tree 
