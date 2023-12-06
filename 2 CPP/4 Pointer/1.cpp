@@ -5,6 +5,14 @@
 using namespace std;
 
 int main(){
+    #ifdef ONLINE_JUDGE
+    // for getting 
+
+    input from input.txt
+    freopen("input.txt", "r", stdin);
+
+    freopen("output.txt", "w", stdout);
+#endif
     // What is a pointer? ----> Data type which holds the address of other data types
     int a=3;
     int* b;
