@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    height: 400px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    
+}
+
+#container i{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+    transition: all ease 0.5s;
+}
