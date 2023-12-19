@@ -1,0 +1,137 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Gillroy-regular', sans-serif;
+     /* font-family: 'Poppins', sans-serif; */
+     /* font-family: 'Whisper', cursive; */
+
+ }
+
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+ }
+
+ #main {
+     display: flex;
+     width: 100%;
+     height: 100%;
+     /* background-color: red; */
+ }
+
+ #left {
+     width: 35%;
+     height: 100%;
+     position: relative;
+     /* background-color: white; */
+ }
+
+
+
+ #lnav {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     padding: 20px 30px;
+ }
+
+ #lnavr {
+     display: flex;
+     align-items: center;
+ }
+
+ #lnavr a {
+     margin-right: 20px;
+     text-decoration: none;
+     color: #000;
+     font-weight: 500;
+     font-size: 14px;
+ }
+
+ #lnavr i {
+     color: royalblue;
+ }
+
+ #left #textcenter {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ #textcenter h1 {
+    /* padding: 20px; */
+     font-size: 90px;
+     font-weight: 600;
+ }
+
+ #textcenter p {
+     opacity: .6;
+     font-size: 12px;
+     line-height: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+
+ #textcenter a {
+     text-decoration: none;
+     color: #000;
+     border-bottom: 1px solid #000;
+     padding-bottom: 5px;
+     font-weight: 600;
+     font-size: 13px;
+     opacity: .6;
+ }
+
+ #right {
+
+     width: 65%;
+     height: 100%;
+     background-color: yellow;
+ }
+
+ #right-top {
+     display: flex;
+     width: 100%;
+     height: 50%;
+     background-color: rgb(0, 0, 0);
+ }
+
+ #right-bottom {
+     width: 100%;
+     height: 50%;
+     background-image: url(https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D);
+     background-size: cover;
+     background-position: center;
+
+ }
+
+ #right-top-left {
+     width: 55%;
+     height: 100%;
+     background-image: url(https://plus.unsplash.com/premium_photo-1672987719865-b34bae00f8a4?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+     background-size: cover;
+     background-position: center;
+ }
+
+ #right-top-right {
+     width: 45%;
+     height: 100%;
+     background-image: url(https://c4.wallpaperflare.com/wallpaper/42/94/569/programming-php-code-developer-wallpaper-preview.jpg);
+     background-size: cover;
+     background-position: center;
+ }
+
+ @media (max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+ }
