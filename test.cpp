@@ -1,25 +1,33 @@
-#include <iostream>
-#include <bits/stdc++.h>
+/* C++ code to generate all possible subarrays/subArrays
+	Complexity- O(n^3) */
+#include<bits/stdc++.h>
 using namespace std;
 
-bool isSubset(int arr[], int arr2[], int m, int n){
-    
-    
+// Prints all subarrays in arr[0..n-1]
+void subArray(int arr[], int n)
+{
+	// Pick starting point
+	for (int i=0; i <n; i++)
+	{
+		// Pick ending point
+		for (int j=i; j<n; j++)
+		{
+			// Print subarray between current starting
+			// and ending points
+			for (int k=i; k<=j; k++)
+				cout << arr[k] << " ";
+
+			cout << endl;
+		}
+	}
 }
 
-    int main()
+// Driver program
+int main()
 {
-    int arr1[] = {11, 1, 13, 21, 3, 7};
-    int arr2[] = {11, 3, 7, 1};
-
-    int m = sizeof(arr1) / sizeof(arr1[0]);
-    int n = sizeof(arr2) / sizeof(arr2[0]);
-
-    if (isSubset(arr1, arr2, m, n))
-        printf("arr2[] is subset of arr1[] ");
-    else
-        printf("arr2[] is not a subset of arr1[]");
-
-    getchar();
-    return 0;
+	int arr[] = {1, 2, 3, 4};
+	int n = sizeof(arr)/sizeof(arr[0]);
+	cout << "All Non-empty Subarrays\n";
+	subArray(arr, n);
+	return 0;
 }
