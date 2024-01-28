@@ -74,5 +74,7 @@ int main()
     ll.insertAtTail(4);
     ll.insertAtTail(5);
     ll.display();
+    deleteAlternateNodes(ll.head);
+    ll.display();
     return 0;
 }
