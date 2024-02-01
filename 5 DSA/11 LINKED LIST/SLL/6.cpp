@@ -27,7 +27,7 @@ void insertAtHead(Node *&head, int val)
 void display(Node *head)
 {
     Node *temp = head;
-    int count=0;
+    int count = 0;
     while (temp != NULL)
     {
         cout << temp->val << "->";
@@ -35,7 +35,26 @@ void display(Node *head)
         count++;
     }
     cout << "NULL" << endl;
-    cout<<"Length of linked list is:- "<<count<<endl;
+    cout << "Length of linked list is:- " << count << endl;
+}
+
+Node *reverseLL(Node *&head)
+{
+    Node *prevptr = NULL;
+    Node *currptr = head;
+    // currptr->next=prevptr
+    //move all 3 parts by one step ahead
+    while (currptr != NULL)
+    {
+        Node *nextptr = currptr->next;
+        currptr->next = prevptr;
+        prevptr = currptr;
+        currptr = nextptr;
+    }
+    //now when this loop ends, prevptr pointing to my last node which is now head 
+    Node* new_head=prevptr;
+    return new_head;
+
 }
 
 int main()

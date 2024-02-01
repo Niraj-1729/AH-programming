@@ -36,7 +36,7 @@ public:
         Node *temp = head;
         while (temp != NULL)
         {
-            cout << temp->val << "<->";
+            cout << temp->val << " ";
             temp = temp->next;
         }
         cout << endl;
@@ -129,7 +129,42 @@ public:
         }
         free(temp);
     }
+
+    void deleteAtPos(int pos)
+    {
+        // assuming that pos is <= length of dll
+        Node *temp = head;
+        int counter = 1;
+        while (counter < pos)
+        {
+            temp = temp->next;
+            counter++;
+        }
+        // now temp is pointing to at kth node
+        temp->prev->next = temp->next;
+        temp->next->prev = temp->prev;
+        free(temp);
+        return;
+    }
 };
+
+void reverseDll(Node *&head, Node *&tail)
+{
+    Node *currPtr = head;
+    while (currPtr)
+    {
+        Node *nextPtr = currPtr->next;
+        currPtr->next = currPtr->prev;
+        currPtr->prev = nextPtr;
+
+        currPtr = nextPtr;
+    }
+
+    // swapping head and tail pointer
+    Node *newHead = tail;
+    tail = head;
+    head = newHead;
+}
 
 int main()
 {
@@ -148,11 +183,15 @@ int main()
     dll.insertAtEnd(4);
     dll.insertAtEnd(5);
     dll.display();
-    dll.insertAtpos(9, 4);
-    dll.display();
-    dll.deleteAtHead();
-    dll.display();
-    dll.deleteAtTail();
+    // dll.insertAtpos(9, 4);
+    // dll.display();
+    // dll.deleteAtHead();
+    // dll.display();
+    // dll.deleteAtTail();
+    // dll.display();
+    // dll.deleteAtPos(3);
+    // dll.display();
+    reverseDll(dll.head, dll.tail);
     dll.display();
 
     return 0;
