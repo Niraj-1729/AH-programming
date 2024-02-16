@@ -148,23 +148,6 @@ public:
     }
 };
 
-void reverseDll(Node *&head, Node *&tail)
-{
-    Node *currPtr = head;
-    while (currPtr)
-    {
-        Node *nextPtr = currPtr->next;
-        currPtr->next = currPtr->prev;
-        currPtr->prev = nextPtr;
-
-        currPtr = nextPtr;
-    }
-
-    // swapping head and tail pointer
-    Node *newHead = tail;
-    tail = head;
-    head = newHead;
-}
 
 int main()
 {
@@ -183,16 +166,14 @@ int main()
     dll.insertAtEnd(4);
     dll.insertAtEnd(5);
     dll.display();
-    // dll.insertAtpos(9, 4);
-    // dll.display();
+    dll.insertAtpos(9, 4);
+    dll.display();
     // dll.deleteAtHead();
     // dll.display();
     // dll.deleteAtTail();
     // dll.display();
     // dll.deleteAtPos(3);
-    // dll.display();
-    reverseDll(dll.head, dll.tail);
-    dll.display();
+    // dll.display(); 
 
     return 0;
 }
