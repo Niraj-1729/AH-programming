@@ -24,6 +24,26 @@ void printMiddle(stack<int> &s, int &totalSize){
 
 }
 
+void deleteMiddle_util(stack<int>&s, int totalSize, int current){
+    if(s.size()==0){
+        cout<<"there is no element in the stack";
+    }
+    if(current==totalSize/2){
+        s.pop();
+        return;
+    }
+    int temp=s.top();
+    s.pop();
+    deleteMiddle_util(s,totalSize,current+1);
+
+    s.push(temp);
+}
+
+void deleteMiddle(stack<int>&s, int totalSize){
+     int current=0;
+     deleteMiddle_util(s,totalSize,current);
+}
+
 int main()
 {
     stack<int>s;
@@ -36,8 +56,13 @@ int main()
     s.push(60);
     s.push(70);
 
-    int totalSize=s.size();
-    printMiddle(s, totalSize);
+    int totalSize=s.size(); 
+    // printMiddle(s, totalSize);
+    deleteMiddle(s,totalSize);
+    while(!s.empty()){
+        cout<<s.top()<<" ";
+        s.pop();
+    }
 
     return 0;
 }
