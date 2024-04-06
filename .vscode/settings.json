@@ -9,7 +9,8 @@
     "map": "cpp",
     "cmath": "cpp",
     "array": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "queue": "cpp"
   },
   "C_Cpp_Runner.msvcBatchPath": "",
   "C_Cpp_Runner.cCompilerPath": "gcc",
